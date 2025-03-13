@@ -1,5 +1,6 @@
+"use client"
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 export default function Home() {
   return (
     <>
@@ -31,13 +32,19 @@ export default function Home() {
             height={100}
             priority
           />
-          <Image
-            src="/Loader.png"
-            alt="Loader"
-            width={200}
-            height={100}
-            priority
+          <motion.div className="w-full border border-white rounded-xl relative ">
+           <motion.div
+            className="bg-white h-full rounded-xl p-1"
+            initial={{ width: "0%" }}
+            animate={{ width: "100%" }}
+            transition={{
+              duration: 5, // Adjust for speed
+              ease: "easeIn",
+              repeat: Infinity, // If you want it to loop
+              repeatType: "reverse", // Makes it bounce back
+            }}
           />
+         </motion.div>
         </div>
       </div>
     </>
