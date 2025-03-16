@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
 import Main from "../components/Main"
 import How from "../components/How"
 import About from "../components/About"
