@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function loading() {
+export default function Loading() {
   return (
     <div className="flex justify-center items-center w-full h-screen ">
       {/* Background Image */}
